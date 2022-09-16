@@ -5,12 +5,12 @@ I created an app that can share the selected to my friends through social media.
 
 Answers to the lab questions:
 1. What technology from last unit’s guide is used to specify the StyleSheet?
-StyleSheet imported from 'react-native'
+    StyleSheet imported from 'react-native'
 2. How are curly braces ({}) used in the JSX code.
-= It is used to evaluate a JavaScript expression during compilation
+    = It is used to evaluate a JavaScript expression during compilation
 3. What is the purpose of the asynchronous (asyc) decorator specification?
-async is used gto carry out asynchronous functions. Await returns
+    async is used gto carry out asynchronous functions. Await returns
 4. Identify one anonymous function in the code.
-let openShareDialogAsync = async () => {
-    ....
-    }
+    let openShareDialogAsync = async () => {
+        ....
+        }
