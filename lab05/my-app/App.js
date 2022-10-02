@@ -8,9 +8,6 @@ import DetailsScreen from "./screens/details";
 import About from "./screens/about";
 import Header from './shared/header';
 
-// -------------------------------
-
-
 
 const Stack = createNativeStackNavigator();
 
