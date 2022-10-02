@@ -8,7 +8,7 @@ export default function About({ route, navigation }) {
   return (
     <View style={globalStyles.container}>
       {/* Display the fields of the received movie object. */}
-      <Text></Text>
+      <Text>This application lists movies and movie reviews.</Text>
 
     </View>
   );
