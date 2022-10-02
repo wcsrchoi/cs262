@@ -1,3 +1,10 @@
+CS 262 - Lab 4
+This lab is based on https://cs.calvin.edu/courses/cs/262/kvlinden/04analysis/lab.html
+
+hacks that I had to make
+
+Answers to the lab questions:
+
 a. What React construct is used to implement separate pages of an application (cf. separate webpages on the Web)?
 --> Stack navigator is used to implement separate pages and RouteName is used to navigate those pages.
 
