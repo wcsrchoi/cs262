@@ -1,8 +1,6 @@
 CS 262 - Lab 5
 This lab is based on https://cs.calvin.edu/courses/cs/262/kvlinden/05design/lab.html
 
-We have modified the list of movies from GoogleBooks API so that it is readable
-
 Answers to the lab questions:
 1. Of what benefit was the refactoring phase of this lab?
 --> Organization and grouping similar items together.
