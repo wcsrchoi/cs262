@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, View, Text, TouchableOpacity, FlatList } from 'react-native';
+import { Button, View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { globalStyles } from 'my-app/styles/global';
@@ -7,29 +7,35 @@ import { globalStyles } from 'my-app/styles/global';
 export default function HomeScreen({ navigation }) {
 
   /* Hardcode a "database"/list of movies. */
-  const [reviews, setReviews] = useState([
+  const [players] = useState([
     {
-      title: "Fellowship of the Ring", rating: 8.8, key: '1',
-      description: "Some hobbits begin a quest."
+      id: 1, emailaddress: "me@calvin.edu", name: null
     },
     {
-      title: "Two Towers", rating: 8.7, key: '2',
-      description: 'Some dark lords try to take over the world.'
+      id: 2, emailaddress: "king@gmail.edu", name: "The King"
     },
     {
-      title: "Return of the King", rating: 8.9, key: '3',
-      description: 'The dark lords are defeated, to much rejoicing.'
+      id: 3, emailaddress: "dog@gmail.edu", name: "Dogbreath"
     },
   ]);
 
   return (
     <View style={globalStyles.container}>
       {/* Get rid of that ugly button and, instead, display our list of movies. */}
-      <FlatList data={reviews} renderItem={({ item }) => (
+      <FlatList data={players} renderItem={({ item }) => (
         <TouchableOpacity onPress={() => navigation.navigate('Details', item)}>
-          <Text>{item.title}</Text>
+          <Text style={styles.titleText}>{item.emailaddress}</Text>
         </TouchableOpacity>
-      )} />
-    </View>
+      )
+      } />
+    </View >
   );
+
+
 }
+
+const styles = StyleSheet.create({
+  titleText: {
+    fontWeight: "bold"
+  }
+});
