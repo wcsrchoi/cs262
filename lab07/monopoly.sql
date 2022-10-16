@@ -9,6 +9,7 @@
 DROP TABLE IF EXISTS PlayerGame;
 DROP TABLE IF EXISTS Game;
 DROP TABLE IF EXISTS Player;
+DROP TABLE IF EXISTS Properties;
 
 -- Create the schema.
 CREATE TABLE Game (
