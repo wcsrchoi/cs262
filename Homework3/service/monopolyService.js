@@ -45,7 +45,7 @@ router.delete('/players/:id', deletePlayer);
 
 router.get("/playergame", readPlayerGames);
 router.get("/playergame/gameid=:id", readPlayerGameID);
-router.get("/playergame/playerid:=id", readPlayerIDGame);
+router.get("/playergame/playerid=:id", readPlayerIDGame);
 
 app.use(router);
 app.use(errorHandler);
