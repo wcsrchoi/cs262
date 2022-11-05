@@ -23,12 +23,11 @@ export default function HomeScreen({ navigation }) {
         data={data}
         renderItem={({ item }) => (
           <View>
-            <Text style={globalStyles.titleText}>Player: {item.name == null ? "Anonymous" : item.name}</Text>
-            <Text style={globalStyles.titleText}>Email: {item.emailaddress}</Text>
-            <Text style={globalStyles.titleText}>Game: {item.gameid}</Text>
-            <Text style={globalStyles.titleText}>Score: {item.score}</Text>
-            <Text style={globalStyles.titleText}>{item.currentlocation == null ? "Game ended"
-              : "Currently at " + item.currentlocation}</Text>
+            <Text>GameID: {item.gameid}</Text>
+            <Text>PlayerID: {item.playerid}</Text>
+            <Text>Score: {item.score}</Text>
+            <Text>{item.playerid === 3 ? "Game " + item.gameid + " is finished" : "Currently at Game " + item.gameid}</Text>
+            <Text>----------------------------------------------------</Text>
           </View>
         )}
       />
