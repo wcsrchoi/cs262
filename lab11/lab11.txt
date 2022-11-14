@@ -1,0 +1,9 @@
+Through ESLint, the VS Code fixes the changes and errors such as indentation and space.
+
+Modules Checked:
+1. Home.js - The indentation was not organized, so ESLint has auto indented the code.
+2. Homepage.js - The indentation and spacing was not organized, which ESLint auto corrected it.
+3. Search.js - The spacing was not organized, so ESLint has corrected the spacing for better look.
+
+I decided to not change anything because it was just how the code was organized not the errors.
+The codes were already hospitable, and ESLinten just checked like 1px space off.
